@@ -2252,77 +2252,100 @@
 <section class="education reveal" id="education" style="background:#fff;padding:var(--section-y) var(--section-x);border-top:1px solid var(--warm);">
   <div style="max-width:var(--container);margin:0 auto;">
 
-    <div style="text-align:center;margin-bottom:48px;">
+    <!-- HEAD -->
+    <div style="text-align:center;margin-bottom:56px;">
       <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:14px;">Образование и экспертиза</div>
-      <h2 style="font-family:'Lora',serif;font-size:36px;line-height:1.2;color:var(--ink);max-width:760px;margin:0 auto;font-weight:500;">Сеченов · РУДН · Кулакова · Сколково</h2>
-      <p style="font-size:15px;color:var(--ink2);max-width:640px;margin:18px auto 0;line-height:1.7;">
-        21 год практики, 11 дипломов и удостоверений о повышении квалификации, членство в профессиональной ассоциации. Обучение не прекращается: только в 2025 году пройдено шесть курсов в ведущих центрах.
+      <h2 style="font-family:'Lora',serif;font-size:34px;line-height:1.25;color:var(--ink);max-width:820px;margin:0 auto;font-weight:500;">Школа сильной клинической медицины и современной репродуктологии</h2>
+      <p style="font-size:15px;color:var(--ink2);max-width:680px;margin:22px auto 0;line-height:1.75;">
+        21 год практики. Обучение в ведущих медицинских центрах России — от Сеченовского университета до Центра Кулакова и Московской школы управления СКОЛКОВО. Регулярное повышение квалификации позволяет использовать современные и доказательные подходы в гинекологии, репродуктологии, ведении беременности и ультразвуковой диагностике.
       </p>
     </div>
 
-    <!-- Membership badge -->
-    <div style="background:var(--rose-pale);border:1px solid var(--tiffany-light);border-radius:12px;padding:24px 28px;display:flex;align-items:center;gap:22px;margin-bottom:48px;flex-wrap:wrap;">
+    <!-- MEMBERSHIP -->
+    <div style="background:var(--rose-pale);border:1px solid var(--tiffany-light);border-radius:12px;padding:24px 28px;display:flex;align-items:center;gap:22px;margin-bottom:64px;flex-wrap:wrap;">
       <div style="flex-shrink:0;width:56px;height:56px;border-radius:50%;background:var(--tiffany);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Lora',serif;font-size:22px;font-weight:500;">★</div>
       <div style="flex:1;min-width:240px;">
-        <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tiffany);font-weight:600;margin-bottom:4px;">Профессиональное членство</div>
+        <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--tiffany);font-weight:600;margin-bottom:4px;">Профессиональное сообщество</div>
         <div style="font-family:'Lora',serif;font-size:20px;color:var(--ink);line-height:1.3;">Член Российской ассоциации репродукции человека (РАРЧ)</div>
-        <div style="font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.6;">Ведущая профессиональная ассоциация репродуктологов России. Стандарты ВРТ и ЭКО.</div>
+        <div style="font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.6;">Профессиональное сообщество специалистов в области репродуктивной медицины и ВРТ.</div>
       </div>
     </div>
 
-    <!-- Timeline -->
+    <!-- EDUCATION TIMELINE SUBHEADING -->
+    <div style="text-align:center;margin-bottom:28px;">
+      <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink3);font-weight:600;">Образование</div>
+    </div>
+
+    <!-- TIMELINE -->
+    <style>
+      .edu-card{transition:box-shadow 0.2s ease,transform 0.2s ease,border-color 0.2s ease;}
+      .edu-card:hover{box-shadow:0 6px 24px rgba(26,26,26,0.07);transform:translateY(-2px);border-color:var(--ink3);}
+      .edu-card--highlight:hover{box-shadow:0 8px 28px rgba(10,191,188,0.2);border-color:var(--tiffany);}
+    </style>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
 
-      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:24px 26px;">
-        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:8px;letter-spacing:0.05em;">2004 · БАЗОВОЕ ВЫСШЕЕ</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">Ставропольская государственная медицинская академия</div>
-        <div style="font-size:13px;color:var(--ink2);">Специальность «Лечебное дело». Диплом ВСБ № 0948104.</div>
+      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:26px 28px;">
+        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:10px;letter-spacing:0.05em;">2004 · БАЗОВОЕ МЕДИЦИНСКОЕ ОБРАЗОВАНИЕ</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Ставропольская государственная медицинская академия</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">Специальность — «Лечебное дело».</div>
       </div>
 
-      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:24px 26px;">
-        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:8px;letter-spacing:0.05em;">2004–2006 · ОРДИНАТУРА</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">Первый Московский государственный медицинский университет имени И.М. Сеченова</div>
-        <div style="font-size:13px;color:var(--ink2);">Клиническая ординатура по специальности «Акушерство и гинекология».</div>
+      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:26px 28px;">
+        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:10px;letter-spacing:0.05em;">2004–2006 · КЛИНИЧЕСКАЯ ОРДИНАТУРА</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Первый Московский государственный медицинский университет имени И. М. Сеченова Минздрава России</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">Специальность — «Акушерство и гинекология». Именно в этот период формировался практический опыт работы в экстренной и клинической гинекологии.</div>
       </div>
 
-      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:24px 26px;">
-        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:8px;letter-spacing:0.05em;">2012 · ПРОФПЕРЕПОДГОТОВКА</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">РУДН</div>
-        <div style="font-size:13px;color:var(--ink2);">«Ультразвуковая диагностика». Диплом ПП-I № 011591.</div>
+      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:26px 28px;">
+        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:10px;letter-spacing:0.05em;">2012 · ПРОФЕССИОНАЛЬНАЯ ПЕРЕПОДГОТОВКА</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Российский университет дружбы народов (РУДН)</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">Ультразвуковая диагностика.</div>
       </div>
 
-      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:24px 26px;">
-        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:8px;letter-spacing:0.05em;">2015 · ПРОФПЕРЕПОДГОТОВКА</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">РМАПО, 576 часов</div>
-        <div style="font-size:13px;color:var(--ink2);">«Организация здравоохранения и общественное здоровье» — право на должность главного врача.</div>
+      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:26px 28px;">
+        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:10px;letter-spacing:0.05em;">2015 · УПРАВЛЕНИЕ МЕДИЦИНСКОЙ ОРГАНИЗАЦИЕЙ</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Российская медицинская академия непрерывного профессионального образования (РМАНПО)</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">«Организация здравоохранения и общественное здоровье». Подготовка для работы в должности главного врача.</div>
       </div>
 
-      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:24px 26px;">
-        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:8px;letter-spacing:0.05em;">2021 · ПОВЫШЕНИЕ КВАЛИФИКАЦИИ</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">МШУ СКОЛКОВО</div>
-        <div style="font-size:13px;color:var(--ink2);">«Системное управление клиникой».</div>
+      <div class="edu-card" style="background:#fff;border:1px solid var(--warm);border-radius:12px;padding:26px 28px;">
+        <div style="font-size:12px;color:var(--ink3);font-weight:500;margin-bottom:10px;letter-spacing:0.05em;">2021 · УПРАВЛЕНИЕ КЛИНИКОЙ</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Московская школа управления СКОЛКОВО</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">Программа «Системное управление клиникой».</div>
       </div>
 
-      <div class="edu-card edu-card--highlight" style="background:linear-gradient(135deg,var(--rose-pale) 0%,#fff 100%);border:1px solid var(--tiffany);border-radius:12px;padding:24px 26px;position:relative;">
+      <div class="edu-card edu-card--highlight" style="background:linear-gradient(135deg,var(--rose-pale) 0%,#fff 100%);border:1px solid var(--tiffany);border-radius:12px;padding:26px 28px;position:relative;">
         <div style="display:inline-block;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--tiffany);font-weight:700;background:#fff;padding:4px 10px;border-radius:12px;border:1px solid var(--tiffany-light);margin-bottom:12px;">★ Ключевое</div>
-        <div style="font-size:12px;color:var(--tiffany);font-weight:600;margin-bottom:8px;letter-spacing:0.05em;">2025 · ПОВЫШЕНИЕ КВАЛИФИКАЦИИ · 144 ч</div>
-        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.35;margin-bottom:6px;">НМИЦ акушерства, гинекологии и перинатологии им. академика В.И. Кулакова</div>
-        <div style="font-size:13px;color:var(--ink2);">«Вспомогательные репродуктивные технологии в лечении женского и мужского бесплодия». Центр Кулакова — ведущий репродуктивный центр России.</div>
+        <div style="font-size:12px;color:var(--tiffany);font-weight:600;margin-bottom:10px;letter-spacing:0.05em;">2025 · ПОВЫШЕНИЕ КВАЛИФИКАЦИИ · 144 ЧАСА</div>
+        <div style="font-family:'Lora',serif;font-size:17px;color:var(--ink);line-height:1.4;margin-bottom:8px;">Национальный медицинский исследовательский центр акушерства, гинекологии и перинатологии имени академика В. И. Кулакова Минздрава России</div>
+        <div style="font-size:13.5px;color:var(--ink2);line-height:1.6;">Программа: «Вспомогательные репродуктивные технологии в лечении женского и мужского бесплодия». Центр Кулакова — один из ведущих российских центров в области репродуктивной медицины и ВРТ.</div>
       </div>
 
     </div>
 
-    <!-- 2025 stack of courses -->
-    <div style="margin-top:40px;padding:28px 32px;background:var(--bg2);border-radius:12px;">
-      <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:16px;">Интенсивное обучение в 2025 году</div>
-      <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px 24px;font-size:14px;color:var(--ink2);line-height:1.5;">
-        <li>· УЗ-диагностика в абдоминальной хирургии <span style="color:var(--ink3);">(март)</span></li>
-        <li>· УЗ-диагностика молочных желёз <span style="color:var(--ink3);">(апрель)</span></li>
-        <li>· Практическая гистерорезектоскопия <span style="color:var(--ink3);">(апрель)</span></li>
-        <li>· Патология шейки матки, влагалища и вульвы <span style="color:var(--ink3);">(сентябрь)</span></li>
-        <li>· ВРТ в лечении бесплодия (НМИЦ Кулакова) <span style="color:var(--ink3);">(сен–окт, 144 ч)</span></li>
-        <li>· УЗ-диагностика в уронефрологии <span style="color:var(--ink3);">(ноябрь)</span></li>
+    <!-- CONTINUOUS LEARNING 2025 -->
+    <div style="margin-top:56px;padding:32px 36px;background:var(--bg2);border-radius:12px;">
+      <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:10px;">Постоянное обучение</div>
+      <h3 style="font-family:'Lora',serif;font-size:22px;line-height:1.3;color:var(--ink);font-weight:500;margin-bottom:14px;">Повышение квалификации в 2025 году</h3>
+      <p style="font-size:14.5px;color:var(--ink2);line-height:1.7;margin-bottom:22px;max-width:660px;">
+        Врачебная практика требует постоянного обновления знаний. Только за 2025 год пройдено несколько специализированных программ:
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px;font-size:14.5px;color:var(--ink);line-height:1.55;">
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>УЗ-диагностика в абдоминальной хирургии</li>
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>УЗ-диагностика молочных желёз</li>
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>Практическая гистерорезектоскопия</li>
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>Патология шейки матки, влагалища и вульвы</li>
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>ВРТ в лечении бесплодия</li>
+        <li style="position:relative;padding-left:20px;"><span style="position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--tiffany);"></span>УЗ-диагностика в уронефрологии</li>
       </ul>
+    </div>
+
+    <!-- APPROACH -->
+    <div style="margin:64px auto 0;max-width:760px;text-align:center;padding:0 20px;">
+      <div style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:18px;">Подход</div>
+      <p style="font-family:'Lora',serif;font-size:19px;line-height:1.55;color:var(--ink);font-weight:400;font-style:italic;">
+        Для меня обучение — не формальность и не «коллекция сертификатов». Это возможность давать пациенткам современную, доказательную и безопасную медицинскую помощь на каждом этапе — от диагностики до сложных репродуктивных программ.
+      </p>
     </div>
 
   </div>
