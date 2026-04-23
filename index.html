@@ -2799,49 +2799,95 @@
 </div>
 
 <!-- BOOKING -->
-<!-- CTA / Запись — прямые каналы -->
 <style>
-  .cta-wrap{max-width:720px;margin:0 auto;}
-  .cta-primary{display:block;background:var(--tiffany);color:#fff;text-decoration:none;border-radius:14px;padding:28px 32px;transition:all 0.2s;box-shadow:0 2px 16px rgba(10,191,188,0.18);}
-  .cta-primary:hover{background:var(--rose-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(10,191,188,0.28);}
-  .cta-primary__eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;opacity:0.85;font-weight:600;margin-bottom:6px;}
-  .cta-primary__title{font-family:'Lora',serif;font-size:24px;line-height:1.25;margin-bottom:6px;}
-  .cta-primary__sub{font-size:13px;line-height:1.55;opacity:0.88;}
-  .cta-secondary-row{display:flex;gap:14px;margin-top:14px;}
-  .cta-secondary{flex:1;background:#fff;border:1px solid var(--warm);border-radius:12px;padding:18px 22px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;transition:all 0.2s;}
-  .cta-secondary:hover{border-color:var(--ink3);transform:translateY(-1px);}
-  .cta-secondary__label{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink3);font-weight:600;}
-  .cta-secondary__value{font-family:'Lora',serif;font-size:16px;color:var(--ink);}
-  .cta-secondary__hint{font-size:12px;color:var(--ink3);line-height:1.5;}
-  @media (max-width:560px){
-    .cta-secondary-row{flex-direction:column;gap:10px;}
-    .cta-primary{padding:22px 24px;}
-    .cta-primary__title{font-size:20px;}
+  .bk2{background:var(--bg2);border-top:1px solid var(--warm);}
+  .bk2__inner{
+    max-width:var(--container);margin:0 auto;
+    padding:96px var(--section-x);
+    display:grid;
+    grid-template-columns:1fr 400px;
+    gap:64px;
+    align-items:center;
+  }
+  .bk2__eyebrow{font-size:10.5px;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:16px;}
+  .bk2__title{font-family:'Lora',serif;font-size:34px;line-height:1.25;font-weight:400;color:var(--ink);margin-bottom:20px;max-width:480px;}
+  .bk2__text{font-size:15px;line-height:1.8;color:var(--ink2);font-weight:300;max-width:460px;margin-bottom:28px;}
+  .bk2__legal{font-size:12px;line-height:1.65;color:#bbb;max-width:420px;}
+  .bk2__legal a{color:#bbb;text-decoration:underline;}
+
+  .bk2__card{
+    background:#fff;
+    border:1px solid #e8e8e8;
+    border-radius:20px;
+    padding:36px 32px;
+    box-shadow:0 6px 32px rgba(0,0,0,0.06);
+    text-decoration:none;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    transition:transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  }
+  .bk2__card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 48px rgba(10,191,188,0.14);
+    border-color:#b2e5e4;
+  }
+  .bk2__card-icon{font-size:28px;margin-bottom:18px;line-height:1;}
+  .bk2__card-title{font-family:'Lora',serif;font-size:22px;line-height:1.3;color:var(--ink);font-weight:500;margin-bottom:14px;}
+  .bk2__card-lines{display:flex;flex-direction:column;gap:8px;margin-bottom:28px;}
+  .bk2__card-line{font-size:14px;color:var(--ink2);line-height:1.5;display:flex;align-items:center;gap:8px;}
+  .bk2__card-line::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--tiffany);flex-shrink:0;}
+  .bk2__btn{
+    display:inline-block;
+    background:var(--tiffany);
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    padding:14px 24px;
+    border-radius:28px;
+    text-decoration:none;
+    text-align:center;
+    transition:background 0.18s, transform 0.18s, box-shadow 0.18s;
+    box-shadow:0 6px 20px rgba(10,191,188,0.22);
+  }
+  .bk2__btn:hover{background:#089a98;transform:translateY(-1px);box-shadow:0 10px 28px rgba(10,191,188,0.32);}
+
+  @media(max-width:960px){
+    .bk2__inner{grid-template-columns:1fr;gap:40px;padding:64px var(--section-x);}
+    .bk2__title{font-size:28px;max-width:100%;}
+    .bk2__card{padding:28px 24px;}
+  }
+  @media(max-width:540px){
+    .bk2__inner{padding:48px 20px;}
+    .bk2__title{font-size:24px;}
   }
 </style>
-<section class="booking-clean reveal" id="booking" style="background:var(--bg2);">
-  <div class="booking-clean__inner" style="max-width:var(--container);margin:0 auto;padding:var(--section-y) var(--section-x);">
+<section class="bk2 reveal" id="booking">
+  <div class="bk2__inner">
 
-    <div class="booking-clean__intro" style="text-align:center;margin-bottom:40px;">
-      <div class="booking-clean__eyebrow">Запись на консультацию</div>
-      <h2 class="booking-clean__title">Онлайн-запись через ПроДокторов</h2>
-      <p class="booking-clean__text" style="max-width:560px;margin:16px auto 0;">
-        Актуальное расписание, история отзывов и верифицированные документы на проверенной медицинской платформе.
+    <div>
+      <div class="bk2__eyebrow">Запись на консультацию</div>
+      <h2 class="bk2__title">Онлайн-запись на приём через ПроДокторов</h2>
+      <p class="bk2__text">
+        Выберите удобное время для очного или онлайн-приёма, ознакомьтесь с отзывами
+        пациенток и запишитесь через проверенную медицинскую платформу.
+      </p>
+      <p class="bk2__legal">
+        Запись осуществляется через платформу ПроДокторов.<br>
+        Сайт dr-poluyan.ru не собирает и не хранит персональные данные пациентов.
       </p>
     </div>
 
-    <div class="cta-wrap">
-      <a class="cta-primary" href="https://prodoctorov.ru/moskva/vrach/86261-poluyan/?utm_source=dr-poluyan&utm_medium=site&utm_campaign=cta" target="_blank" rel="noopener">
-        <div class="cta-primary__eyebrow">Записаться на приём</div>
-        <div class="cta-primary__title">Через ПроДокторов →</div>
-        <div class="cta-primary__sub">Выбор даты, очный или онлайн-формат, отзывы пациенток</div>
-      </a>
-
-    </div>
-
-    <p style="margin:32px auto 0;text-align:center;font-size:12px;color:var(--ink3);line-height:1.6;max-width:560px;">
-      Запись осуществляется через <a href="https://prodoctorov.ru/moskva/vrach/86261-poluyan/" target="_blank" rel="noopener" style="color:var(--ink2);">ПроДокторов</a>. Сайт dr-poluyan.ru — информационный ресурс, персональные данные для записи не собирает.
-    </p>
+    <a class="bk2__card" href="https://prodoctorov.ru/moskva/vrach/86261-poluyan/?utm_source=dr-poluyan&utm_medium=site&utm_campaign=cta" target="_blank" rel="noopener">
+      <div class="bk2__card-icon">📅</div>
+      <div class="bk2__card-title">Записаться на приём</div>
+      <div class="bk2__card-lines">
+        <div class="bk2__card-line">Очный и онлайн-формат</div>
+        <div class="bk2__card-line">Отзывы пациенток и актуальное расписание</div>
+      </div>
+      <div class="bk2__btn">Перейти в ПроДокторов →</div>
+    </a>
 
   </div>
 </section>
