@@ -1016,6 +1016,31 @@
     color: var(--ink3);
     margin-bottom: 28px;
   }
+  .hero-clean__trust {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-clean__trust li {
+    font-size: 14px;
+    color: var(--ink2);
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero-clean__trust li::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--tiffany);
+    flex-shrink: 0;
+  }
   .hero-clean__actions {
     display: flex;
     gap: 12px;
@@ -2118,53 +2143,25 @@
       <div class="hero-clean__eyebrow fade-up fade-up-delay-1">Акушер-гинеколог · Репродуктолог · Оперирующий гинеколог · Москва</div>
 
       <h1 class="hero-clean__title fade-up fade-up-delay-1">
-        Гинеколог и репродуктолог в Москве.
-        <span>Врач который всегда рядом.</span>
+        Екатерина Полуян — акушер-гинеколог и репродуктолог в Москве
       </h1>
 
-      <div class="hero-clean__meta fade-up fade-up-delay-2">
-        21 год практики · Оперативная гинекология · ЭКО · Ведение ранних сроков
-      </div>
-
-      <div style="font-size:13px;color:#999;font-weight:300;margin-bottom:12px;">Планирование, контрацепция, восстановление · Москва и онлайн</div>
-      <div class="hero-clean__name-intro fade-up fade-up-delay-2">Здравствуйте! Меня зовут</div>
-
-      <div class="hero-clean__name fade-up fade-up-delay-2">
-        Полуян
-        <span>Екатерина</span>
-        <small>Александровна</small>
-      </div>
-
       <p class="hero-clean__text fade-up fade-up-delay-3">
-        Сегодня контрацепция, через год планирование, ещё через пять — восстановление после родов.
-        Я веду пациенток на этапе лечения бесплодия, провожу операции, веду ранние сроки беременности и помогаю с вопросами, которые меняются вместе с жизнью.
+        21 год практики.<br>
+        Бережный и доказательный подход к женскому здоровью, планированию беременности и репродуктивной медицине.
       </p>
-      <p class="hero-clean__text hero-clean__text--soft fade-up fade-up-delay-3">
-        Оперативная гинекология, репродуктивная медицина и восстановление функции — три направления одной практики.
-      </p>
+
+      <ul class="hero-clean__trust fade-up fade-up-delay-3">
+        <li>21 год врачебной практики</li>
+        <li>15 000+ пациенток</li>
+        <li>Репродуктология и ведение беременности</li>
+        <li>Опыт руководства клиниками</li>
+        <li>Член Российской ассоциации репродукции человека</li>
+      </ul>
 
       <div class="hero-clean__actions fade-up fade-up-delay-4">
-        <a href="#booking" class="btn-main">Записаться на приём</a>
-        <a href="#contact" class="btn-ghost">Сотрудничество</a>
-      </div>
-
-      <div style="font-size:13px;color:#888;margin-top:-24px;margin-bottom:28px;font-weight:300;">
-        Частная практика · Москва
-      </div>
-      <div class="hero-clean__stats-label fade-up fade-up-delay-4">Опыт и практика</div>
-      <div class="hero-clean__stats fade-up fade-up-delay-4">
-        <div class="hero-clean__stat">
-          <div class="hero-clean__stat-num">21</div>
-          <div class="hero-clean__stat-text">год практики</div>
-        </div>
-        <div class="hero-clean__stat">
-          <div class="hero-clean__stat-num">15 000+</div>
-          <div class="hero-clean__stat-text">пациенток</div>
-        </div>
-        <div class="hero-clean__stat">
-          <div class="hero-clean__stat-num">4</div>
-          <div class="hero-clean__stat-text">специализации<br><span style="font-size:10px;color:var(--ink3);font-weight:400;letter-spacing:0.02em;">Сеченов · РУДН · Кулакова · Сколково</span></div>
-        </div>
+        <a href="https://prodoctorov.ru/moskva/vrach/86261-poluyan/?utm_source=dr-poluyan&utm_medium=site&utm_campaign=hero" class="btn-main" target="_blank" rel="noopener">Записаться через ПроДокторов</a>
+        <a href="#visit" class="btn-ghost">Как проходит приём</a>
       </div>
     </div>
 
@@ -2197,15 +2194,12 @@
 
     <div class="about-clean__main">
       <div class="about-clean__eyebrow">О себе</div>
-      <h2 class="about-clean__title">Акушер-гинеколог и репродуктолог,<br>который остаётся рядом на каждом этапе</h2>
+      <h2 class="about-clean__title">О враче</h2>
       <div class="about-clean__text">
-        <p style="font-size:14px;color:var(--ink2);font-weight:500;font-style:italic;margin-bottom:16px;border-left:2px solid var(--warm);padding-left:14px;">Я никогда не верила в подход «всем одно и то же». Не люблю лишние обследования, назначения «на всякий случай» и повторение схем без попытки понять настоящую причину проблемы. Для меня медицина начинается с внимательного взгляда на человека, его историю и жизнь, а не только с анализов и протоколов.</p>
-        <p>Я приехала в Москву из Ставрополя — без связей, без поддержки и готовых возможностей. Поступила в ординатуру по акушерству и гинекологии в Первом Московском государственном медицинском университете имени И. М. Сеченова. Тогда были ночные дежурства, экстренные роды, работа на пределе сил в Городской клинической больнице №67. Именно в те годы я окончательно поняла: гинекология — это не просто профессия, а дело моей жизни. И символично, что позже именно в этом роддоме появилась на свет моя дочь.</p>
-        <p>После ординатуры я шесть лет работала в Поликлинике Центральной клинической больницы Управления делами Президента Российской Федерации. Это была школа очень высокой ответственности, строгих стандартов и внимательного отношения к каждой пациентке.</p>
-        <p>Дальше я шаг за шагом строила свой профессиональный путь сама — от врача-специалиста до заведующей отделением, затем заместителя главного врача и главного врача.</p>
-        <p>Сегодня я сопровождаю женщин на разных этапах жизни: от планирования беременности и лечения бесплодия до ведения сложных гинекологических состояний. Провожу оперативные вмешательства — гистероскопию, полипэктомию, биопсию эндометрия, лечение патологии шейки матки.</p>
-        <p>Отдельное и очень важное направление моей работы — восстановление женского здоровья после родов и помощь при атрофических изменениях. Для меня это не про «эстетику ради эстетики», а про комфорт, уверенность в себе, качество жизни и возможность снова чувствовать себя хорошо в собственном теле.</p>
-        <p>Мне важно не просто назначить лечение, а по-настоящему понять женщину, увидеть детали её истории и остаться рядом — даже тогда, когда меняются обстоятельства, планы и жизненные приоритеты.</p>
+        <p style="font-size:14px;color:var(--ink2);font-weight:500;font-style:italic;margin-bottom:16px;border-left:2px solid var(--warm);padding-left:14px;">Я не сторонник избыточных обследований и шаблонных схем лечения без понимания причины проблемы. В медицине для меня важны спокойный диалог, уважение к пациентке и понятный план действий.</p>
+        <p>Мой путь начался с ординатуры в Первом Московском государственном медицинском университете имени И. М. Сеченова и работы в родильном доме ГКБ №67 Москвы — с ночными дежурствами, экстренными случаями и большим клиническим опытом.</p>
+        <p>Позже я работала в поликлинике Центральной клинической больницы Управления делами Президента Российской Федерации, где сформировался мой подход к качеству медицинской помощи и вниманию к деталям.</p>
+        <p>Сегодня я сопровождаю пациенток в вопросах женского здоровья, планирования беременности, репродуктивной медицины и гормонального здоровья.</p>
       </div>
     </div>
 
@@ -2369,7 +2363,7 @@
         <div class="cases-clean__card-top">
           <div class="cases-clean__card-tag">Время решает</div>
         </div>
-        <h3 class="cases-clean__card-title">Рожать нужно сейчас, а не через два года</h3>
+        <h3 class="cases-clean__card-title">Ситуация, где время имело значение</h3>
         <div class="cases-clean__grid">
           <div class="cases-clean__block">
             <div class="cases-clean__label">Ситуация</div>
@@ -2605,6 +2599,16 @@
       <div class="visit__foot-item"><strong>Что взять с собой:</strong> предыдущие обследования и анализы (если есть)</div>
       <div class="visit__foot-item"><strong>Где проходит приём:</strong> Москва, ул. Лобачевского, 98к3</div>
       <div class="visit__foot-item"><strong>Формат консультации:</strong> без спешки, с возможностью задать вопросы и всё обсудить</div>
+    </div>
+
+    <div style="max-width:720px;margin:48px auto 0;background:#f7fffe;border:1px solid rgba(10,191,188,0.18);border-radius:16px;padding:32px 36px;">
+      <div style="font-size:11px;letter-spacing:0.13em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin-bottom:16px;">Что важно знать перед приёмом</div>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
+        <li style="font-size:14px;color:var(--ink2);line-height:1.6;display:flex;align-items:baseline;gap:10px;"><span style="color:var(--tiffany);font-size:16px;line-height:1;flex-shrink:0;">○</span>Можно прийти без анализов — при необходимости план обследования будет составлен на консультации</li>
+        <li style="font-size:14px;color:var(--ink2);line-height:1.6;display:flex;align-items:baseline;gap:10px;"><span style="color:var(--tiffany);font-size:16px;line-height:1;flex-shrink:0;">○</span>Возьмите результаты предыдущих обследований, если они есть</li>
+        <li style="font-size:14px;color:var(--ink2);line-height:1.6;display:flex;align-items:baseline;gap:10px;"><span style="color:var(--tiffany);font-size:16px;line-height:1;flex-shrink:0;">○</span>Приём проходит в спокойном формате с подробным обсуждением ситуации</li>
+        <li style="font-size:14px;color:var(--ink2);line-height:1.6;display:flex;align-items:baseline;gap:10px;"><span style="color:var(--tiffany);font-size:16px;line-height:1;flex-shrink:0;">○</span>Время консультации позволяет не торопиться и ответить на вопросы</li>
+      </ul>
     </div>
 
   </div>
@@ -2870,8 +2874,8 @@
       <div class="bk2__eyebrow">Запись на консультацию</div>
       <h2 class="bk2__title">Запись на приём через ПроДокторов</h2>
       <p class="bk2__text">
-        Выберите удобное время для приёма, ознакомьтесь с отзывами
-        пациенток и запишитесь через проверенную медицинскую платформу.
+        Вы можете выбрать удобное время для приёма через платформу ПроДокторов,
+        ознакомиться с отзывами пациенток и актуальным расписанием.
       </p>
       <p class="bk2__legal">
         Запись осуществляется через платформу ПроДокторов.<br>
