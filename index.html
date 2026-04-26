@@ -208,6 +208,66 @@
     transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--rose); }
+
+  /* Бургер */
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .burger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+  }
+  .burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .burger.open span:nth-child(2) { opacity: 0; }
+  .burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Мобильное меню */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--warm);
+    z-index: 99;
+    padding: 16px 24px 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  }
+  .mobile-menu ul { list-style: none; }
+  .mobile-menu ul li { border-bottom: 1px solid var(--warm); }
+  .mobile-menu ul li:last-child { border-bottom: none; }
+  .mobile-menu ul a {
+    display: block;
+    padding: 14px 0;
+    font-size: 16px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .mobile-menu__cta {
+    margin-top: 8px;
+    display: block;
+    text-align: center;
+    background: var(--tiffany);
+    color: #fff !important;
+    padding: 14px !important;
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
   .nav-btn {
     background: var(--rose);
     color: var(--white) !important;
@@ -817,6 +877,8 @@
     }
     .nav-name { font-size: 15px; }
     .nav-links { display: none; }
+    .burger { display: flex; }
+    .mobile-menu.open { display: block; }
 
     .section, .quote-wrap { padding: 34px 16px; }
     .section-title { font-size: 24px; }
@@ -2149,7 +2211,20 @@
     <li><a href="#posts">Публикации</a></li>
     <li><a href="#booking" class="nav-btn">Записаться</a></li>
   </ul>
+  <button class="burger" aria-label="Меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-menu" aria-hidden="true">
+  <ul>
+    <li><a href="#about">О враче</a></li>
+    <li><a href="#education">Образование</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#visit">Как проходит приём</a></li>
+    <li><a href="#posts">Публикации</a></li>
+    <li><a href="#booking" class="mobile-menu__cta">Записаться на приём</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section class="hero-clean fade-up" id="top">
@@ -3142,6 +3217,27 @@ function selectFormat(btn) {
   gtag('config', 'G-XXXXXXXXXX');
 </script>
 <!-- /Google tag -->
+
+<script>
+  // Бургер-меню
+  const burger = document.querySelector('.burger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  burger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    mobileMenu.setAttribute('aria-hidden', !open);
+  });
+  // Закрыть при клике на ссылку
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+    });
+  });
+</script>
 
 </body>
 </html>
