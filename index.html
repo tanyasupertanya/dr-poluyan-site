@@ -2483,6 +2483,88 @@
   </div>
 </section>
 
+<!-- ЗАПРОСЫ — с какими запросами я работаю -->
+<style>
+  .queries { background: #fff; border-top: 1px solid var(--warm); border-bottom: 1px solid var(--warm); }
+  .queries__inner { max-width: var(--container); margin: 0 auto; padding: var(--section-y) var(--section-x); }
+  .queries__head { text-align: center; margin-bottom: 48px; }
+  .queries__eyebrow { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--tiffany); margin-bottom: 12px; }
+  .queries__title { font-family: 'Lora', serif; font-size: 32px; color: var(--ink); margin: 0 0 16px; }
+  .queries__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .queries__card { border: 1px solid var(--warm); border-radius: var(--rl); padding: 24px; background: var(--bg2); transition: border-color 0.2s, box-shadow 0.2s; }
+  .queries__card:hover { border-color: var(--tiffany); box-shadow: 0 4px 16px rgba(10,191,188,0.08); }
+  .queries__card-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tiffany); margin-bottom: 14px; }
+  .queries__card-title { font-family: 'Lora', serif; font-size: 16px; font-weight: 500; color: var(--ink); margin: 0 0 8px; }
+  .queries__card-text { font-family: 'Montserrat', sans-serif; font-size: 13px; color: var(--ink2); line-height: 1.6; margin: 0; }
+  @media (max-width: 900px) { .queries__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .queries__grid { grid-template-columns: 1fr; } .queries__title { font-size: 24px; } }
+</style>
+<section class="queries reveal" id="queries">
+  <div class="queries__inner">
+    <div class="queries__head">
+      <div class="queries__eyebrow">Направления работы</div>
+      <h2 class="queries__title">С какими запросами я работаю</h2>
+    </div>
+    <div class="queries__grid">
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Плановый осмотр и диспансеризация</h3>
+        <p class="queries__card-text">Профилактика, мазки, онкоскрининг, подбор контрацепции</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Нарушения цикла и гормональный фон</h3>
+        <p class="queries__card-text">Нерегулярный цикл, ПМС, акне, набор веса, выпадение волос</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Подготовка к беременности</h3>
+        <p class="queries__card-text">Обследование, коррекция дефицитов, минимизация рисков</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Бесплодие и трудности с зачатием</h3>
+        <p class="queries__card-text">Диагностика причин, подбор тактики, ЭКО и альтернативы</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Эндометриоз и миома</h3>
+        <p class="queries__card-text">Диагностика, наблюдение, консервативное и хирургическое лечение</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Патология эндометрия</h3>
+        <p class="queries__card-text">Полипы, гиперплазия — гистероскопия, гистерорезектоскопия</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">УЗИ органов малого таза</h3>
+        <p class="queries__card-text">Диагностика на аппарате экспертного класса, расшифровка результатов</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Подростковая гинекология</h3>
+        <p class="queries__card-text">Становление цикла, дисменорея, гормональный дисбаланс у девочек</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Климакс и менопауза</h3>
+        <p class="queries__card-text">МГТ, сохранение качества жизни, профилактика остеопороза</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Эстетическая гинекология</h3>
+        <p class="queries__card-text">Современные методы восстановления тканей, комфорта и функции интимной зоны после родов, операций и возрастных изменений</p>
+      </div>
+      <div class="queries__card">
+        <div class="queries__card-dot"></div>
+        <h3 class="queries__card-title">Второе мнение</h3>
+        <p class="queries__card-text">Независимый разбор диагноза и тактики лечения, если есть сомнения</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- REVIEWS -->
 <section class="reviews-clean reveal" id="reviews">
   <div class="reviews-clean__inner">
@@ -2848,6 +2930,61 @@
     <a href="mailto:poluyan@dr-poluyan.ru" class="btn-main" style="margin-top:12px;">poluyan@dr-poluyan.ru</a><!-- TODO: заменить на реальный email после регистрации ящика -->
   </div>
 </div>
+
+<!-- FAQ -->
+<style>
+  .faq { background: var(--bg2); border-top: 1px solid var(--warm); }
+  .faq__inner { max-width: var(--container); margin: 0 auto; padding: var(--section-y) var(--section-x); }
+  .faq__head { text-align: center; margin-bottom: 48px; }
+  .faq__eyebrow { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--tiffany); margin-bottom: 12px; }
+  .faq__title { font-family: 'Lora', serif; font-size: 32px; color: var(--ink); margin: 0; }
+  .faq__list { max-width: 760px; margin: 0 auto; }
+  .faq__item { border-bottom: 1px solid var(--warm); }
+  .faq__item summary { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 500; color: var(--ink); padding: 20px 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .faq__item summary::-webkit-details-marker { display: none; }
+  .faq__item summary::after { content: '+'; font-size: 22px; color: var(--tiffany); flex-shrink: 0; transition: transform 0.2s; font-weight: 300; line-height: 1; }
+  .faq__item[open] summary::after { transform: rotate(45deg); }
+  .faq__answer { font-family: 'Montserrat', sans-serif; font-size: 14px; color: var(--ink2); line-height: 1.8; padding: 0 0 20px; margin: 0; }
+  @media (max-width: 600px) { .faq__title { font-size: 24px; } .faq__item summary { font-size: 14px; } }
+</style>
+<section class="faq reveal" id="faq">
+  <div class="faq__inner">
+    <div class="faq__head">
+      <div class="faq__eyebrow">Вопросы и ответы</div>
+      <h2 class="faq__title">Часто спрашивают</h2>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary>Нужно ли направление на приём?</summary>
+        <p class="faq__answer">Нет. Вы можете записаться напрямую — без направления и без предварительных анализов. На первичной консультации я сама определю, какое обследование вам нужно.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Что взять с собой на первый приём?</summary>
+        <p class="faq__answer">Если есть — предыдущие результаты анализов, УЗИ, выписки. Если нет — ничего страшного, начнём с нуля. Главное — прийти.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Как часто нужно посещать гинеколога, если ничего не беспокоит?</summary>
+        <p class="faq__answer">Раз в год — это минимум. Плановый осмотр включает мазки, онкоскрининг и УЗИ. Многие состояния долго протекают бессимптомно, и именно профилактика позволяет поймать их вовремя.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Вы ведёте подростков?</summary>
+        <p class="faq__answer">Да. Я работаю с девочками с момента становления цикла. Нарушения ритма, болезненные менструации, гормональный фон в переходном возрасте — всё это в моей практике. Иногда на приём приходят мама и дочь вместе — это нормально и даже удобно.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Что такое второе мнение и когда оно нужно?</summary>
+        <p class="faq__answer">Это независимый взгляд другого специалиста на ваш диагноз или план лечения. Я рекомендую его всегда, когда предложено хирургическое вмешательство, длительная гормональная терапия или диагноз вызывает у вас сомнения.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Вы делаете операции?</summary>
+        <p class="faq__answer">Да, я оперирующий гинеколог. Провожу гистероскопии, гистерорезектоскопии, лапароскопические операции. Операция назначается только тогда, когда консервативное лечение не даёт результата или не показано.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Вы занимаетесь эстетической гинекологией?</summary>
+        <p class="faq__answer">Да. В своей практике я использую методы эстетической гинекологии прежде всего для восстановления тканей и функции после родов, операций и возрастных изменений. Для меня важно не только эстетическое улучшение, но и комфорт пациентки, качество жизни и отсутствие дискомфорта в повседневной жизни.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
 <!-- BOOKING -->
 <style>
